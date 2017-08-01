@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'edosz';
+  src: url('edosz.ttf');
+  src: url('edosz?#iefix') format('embedded-opentype'),
+    url('edosz.svg#Locaweb-Icons') format('svg'),
+    url('edosz.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	 height: 100%;
+	  width: 100%;
+}
+
+
+#h2buscar{
+	margin-top: 3px;
+}
+
+#enviar{
+	margin-bottom: 15px;
+}
+
+#texto{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#titulo{
+	margin-bottom: 60px;
+}
+
+#titulo-atual{
+	margin-top:8px;
+}
+
+#ativos{
+	margin: 4px;
+}
+
+.titulo-ativo{
+	font-size: 9.5em;
+	color: white;
+	font-family: edosz;
+	margin:3.5% 0% 3.5% 0%;
+}
+
+.link:hover{
+	text-decoration: none;
+}
+
+.itens{
+	
+	transform: skew(-60deg);
+	color: white;
+	font-size: 3.4em;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.itens-preco{
+	transform: skew(-60deg);
+	color: red;
+	font-size: 3.4em;
+	margin: 0px;
+	margin-left: 60px;
+	font-weight: bold;
+}
+
+.fundo-item{
+	background-color: rgba(0, 24, 68,0.6);
+	transform: skew(60deg);
+	margin-top: 0.6%;
+	margin-bottom: 0.6%;
+	margin-left: 4%;
+
+}
+.fundo-branco{
+	background-color: rgba(255, 255, 255, 0.8);
+	transform: skew(60deg);
+	margin-top: 0.6%;
+	margin-bottom: 0.6%;
+
+}
+
+
+.publicidade{
+	margin-top: 2.4%;
+}
+
+
+table{
+	margin-top: 15px;
+	width:100%;
+	margin-bottom: 5px;
+}
+
+td{
+	padding: 3px;
+}	
+
+.navbar-custom{
+	border-radius: 0px;
+}
+
+.espacamento{
+	padding-bottom: 8px;
+}
+
+
+
+
+ 
+#fundo-externo {
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: relative; /* criamos um contexto para posicionamento */
+}
+ 
+#fundo {
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+}
+ 
+#fundo img {
+    height: 100%;
+    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    position: absolute;
+}
+
+footer{
+	background: rgb(48,48,48);
+	margin:0px;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+}
+
