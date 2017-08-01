@@ -51,7 +51,7 @@ $resultado_titulo = mysqli_query($link, $sql);
       <a href="home.php" class="link"><h1 class="titulo-ativo"><?php echo $titulo_ativo; ?></h1></a>
   </div>
 
-		<div class="col-md-12" style="margin-top: 1.4%;">
+		<div class="col-md-12" style="margin-top: 2%;">
 
 			<?php 
 				if($resultado_id){
@@ -80,7 +80,7 @@ $resultado_titulo = mysqli_query($link, $sql);
               
 
              
-              if($contador == 6){
+              if($contador == 5){
                 echo "</div>";
                 
                 $contador = 0;
