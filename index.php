@@ -51,7 +51,7 @@ $resultado_titulo = mysqli_query($link, $sql);
       <a href="home.php" class="link"><h1 class="titulo-ativo"><?php echo $titulo_ativo; ?></h1></a>
   </div>
 
-		<div class="col-md-12" style="margin-top: 2.4%;">
+		<div class="col-md-12" style="margin-top: 1.4%;">
 
 			<?php 
 				if($resultado_id){
