@@ -122,7 +122,7 @@ $(document).ready(function(){
                 bolas();
            
             
-        }, 1500);
+        }, 2500);
 
        
         }
@@ -140,12 +140,13 @@ $(document).ready(function(){
             }
 
             
-            random = Math.floor(Math.random() * 4);
+            random = Math.floor(Math.random() * 6);
              
             
             
 
             switch(random){
+                //verdinho e azul
                 case 0:
                     //bola 2 é a maior
                     //bola 4 é a do meio
@@ -154,72 +155,44 @@ $(document).ready(function(){
                     bola3.css({"background-color": "rgba(136, 147, 142, 0.8)"});
                     bola4.css({"background-color": "rgba(4, 192, 209, 0.8)"});
                 break;
+                //amarelo e verdinho
                 case 1:
                     bola2.css({"background-color": "rgba(255, 255, 0, 0.5)"});
                     bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
                     bola4.css({"background-color": "rgba(4, 192, 209, 0.8)"});
                 break;
+                //amarelo e laranja
                 case 2:
                     bola2.css({"background-color": "rgba(255, 255, 0, 0.5)"});
                     bola3.css({"background-color": "rgba(136, 147, 142, 0.8)"});
                     bola4.css({"background-color": "rgba(255, 0, 0, 0.6)"});
                     
                 break;
+                //amarelo e azul
                 case 3:
                     bola2.css({"background-color": "rgba(255, 255, 0, 0.5)"});
                     bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
                     bola4.css({"background-color": "rgba(0, 101, 255, 0.8)"});
                 break;
-
-                
+                //vermelho e amarelo
+                case 4:
+                    bola2.css({"background-color": "rgba(255, 22, 22, 0.8)"});
+                    bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
+                    bola4.css({"background-color": "rgba(255, 225, 0, 0.8)"});
+                break;
+                //vinho co vinhinho
+                case 5:
+                    bola2.css({"background-color": "rgba(130, 20, 40, 0.8)"});
+                    bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
+                    bola4.css({"background-color": "rgba(255, 255, 255, 0.5)"});
+                break;
 
             }
 
-                //gotico
-                bola2.css({"background-color": "rgba(89, 0, 255, 0.5)"});
-                bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
-                bola4.css({"background-color": "rgba(0, 0, 0, 0.4)"});
-
-
-                //rosa co rosinha
-                bola2.css({"background-color": "rgba(255, 0, 63, 0.7)"});
-                bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
-                bola4.css({"background-color": "rgba(255, 255, 255, 0.3)"});
-
-
-                //azul co azuzinho
-                bola2.css({"background-color": "rgba(71, 131, 204, 0.9)"});
-                bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
-                bola4.css({"background-color": "rgba(255, 255, 255, 0.3)"});
-
-
-                //vinho co vinhinho
-                bola2.css({"background-color": "rgba(89, 0, 25, 0.9)"});
-                bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
-                bola4.css({"background-color": "rgba(255, 255, 255, 0.3)"});
-
-                //rosa co rosinha
-                bola2.css({"background-color": "rgba(3, 43, 0, 0.4)"});
-                bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
-                bola4.css({"background-color": "rgba(255, 255, 255, 0.3)"});
-
-
                 
-                bola2.css({"background-color": "rgba(12, 0, 170, 0.8)"});
-                bola3.css({"background-color": "rgba(136, 147, 142, 0.9)"});
-                 bola4.css({"background-color": "rgba(255, 255, 255, 0.3)"});
+               
 
 
-
-
-
-
-             
-
-
-            
-
-           
 
             promocao.animate({height: '22%', width:'30%', left: '62%', top: '8%'}, "slow");
 
