@@ -163,7 +163,7 @@ $resultado_titulo = mysqli_query($link, $sql);
           }
 
             
-         }, 15000);
+         }, 8000);
 
         
         
