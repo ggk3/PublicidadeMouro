@@ -3,11 +3,12 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Mar-2017 às 17:00
+-- Generation Time: 04-Ago-2017 às 16:12
 -- Versão do servidor: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
-
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -18,7 +19,7 @@
 --
 -- Database: `mouro`
 --
-create database mouro;
+
 -- --------------------------------------------------------
 
 --
@@ -34,11 +35,21 @@ CREATE TABLE `produtos` (
   `ativo` int(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Extraindo dados da tabela `produtos`
+-- Estrutura da tabela `produtos_outdoor`
 --
 
-
+CREATE TABLE `produtos_outdoor` (
+  `id_produto` int(10) NOT NULL,
+  `departamento` int(10) NOT NULL,
+  `tipo` int(2) NOT NULL,
+  `preco` float(5,2) NOT NULL,
+  `descricao` varchar(45) NOT NULL,
+  `ativo` int(1) NOT NULL DEFAULT '0',
+  `imagem` int(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -52,15 +63,6 @@ CREATE TABLE `usuarios` (
   `senha` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Extraindo dados da tabela `usuarios`
---
-
-INSERT INTO `usuarios` (`id`, `usuario`, `senha`) VALUES
-(1, '4ge', 'bcac24b89a121b8d1434e3c808bb1fb9');
-INSERT INTO `usuarios` (`id`, `usuario`, `senha`) VALUES
-(2, 'mercadomouro', 'd75ade32cb1552b29beddc78050cbe4c');
-
 -- --------------------------------------------------------
 
 --
@@ -69,15 +71,9 @@ INSERT INTO `usuarios` (`id`, `usuario`, `senha`) VALUES
 
 CREATE TABLE `util` (
   `quant_ativos` int(2) NOT NULL,
-  `titulo` varchar(40) NOT NULL
+  `titulo` varchar(40) NOT NULL,
+  `quant_ativos_outdoor` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `util`
---
-
-INSERT INTO `util` (`quant_ativos`, `titulo`) VALUES
-(0, 'Mouro Publicidade');
 
 --
 -- Indexes for dumped tables
@@ -87,6 +83,12 @@ INSERT INTO `util` (`quant_ativos`, `titulo`) VALUES
 -- Indexes for table `produtos`
 --
 ALTER TABLE `produtos`
+  ADD PRIMARY KEY (`id_produto`);
+
+--
+-- Indexes for table `produtos_outdoor`
+--
+ALTER TABLE `produtos_outdoor`
   ADD PRIMARY KEY (`id_produto`);
 
 --
@@ -103,7 +105,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
